@@ -1,0 +1,331 @@
+/*#ff6600*/
+
+/* Font setup */
+html {
+  scroll-behavior: smooth;
+}
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+      transition: ease 0.2s;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles (mobile first) */
+body {
+  background-color: whitesmoke;
+}
+footer{
+
+    width:100%;
+    height: 100px;
+    background: #ff6600;
+    text-align: center  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+   
+}
+.ig{
+    display: inline-block;
+color:black;
+         
+        text-decoration: none;
+     margin-right: 1rem;
+     
+     margin-left: 1rem;
+}
+.ig:hover{
+    transform: scale(1.1);
+}
+.ig::before{
+    position: relative;
+    top:3px;
+    margin-right: 5px;
+    content:"";
+    background-image:url("—Pngtree—instagram social flat silhouette icons_8704819 (1).png");
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+
+    
+}
+/* Header */
+header {
+    
+    border-bottom: 2px solid black;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #ff6600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  margin: 0;
+  padding: 0 1rem;
+  border: none;
+}
+
+/* Title in header */
+.naslov {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  color: black;
+  height: 100%;
+    text-decoration: none;
+}
+
+.naslov::after {
+  content: "";
+  width: 1.8em;
+  margin-left: 5px;
+  background-size: contain;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/objects-5/24/Car-Air_Pump-512.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Navigation */
+header nav {
+  display: none; /* hidden on mobile */
+  align-items: center;
+  height: 100%;
+}
+
+header nav a {
+  display: flex;
+  align-items: center;
+  padding: 0 0.6rem;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+}
+
+header a:hover {
+  background-color: #e55e05;
+  cursor: pointer;
+}
+
+/* Hero section */
+.slika1 {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: #ff6600; /* fills subpixel gap */
+  overflow: hidden; /* prevents bleed */
+}
+
+.slika2{
+      display: flex;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: #ff6600; /* fills subpixel gap */
+  overflow: hidden; /* prevents bleed */
+
+}
+
+.slika2::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* overlaps header edge */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 1px);
+  filter: blur(2.5px);
+  background-image: url("pumpaj2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.slika2 h3 {
+    text-align: center;
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 4em;
+  text-shadow:
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px;
+}
+
+.slika3{
+      display: flex;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: #ff6600; /* fills subpixel gap */
+  overflow: hidden; /* prevents bleed */
+
+}
+
+.slika3::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* overlaps header edge */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 1px);
+  filter: blur(2.5px);
+  background-image: url("https://boom93.rs/image/cache/extra-large/files/images/69c78f39-3759-400d-beca-c02dec6d7a69.jpg?crop=true");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.slika3 h3 {
+    text-align: center;
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 4em;
+  text-shadow:
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px;
+}
+.slika1::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* overlaps header edge */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 1px);
+  filter: blur(2.5px);
+  background-image: url("pumpaj1.jpg");
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.slika1 h3 {
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 4em;
+  text-shadow:
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    red 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px,
+    #ff6600 0px 0px 1px;
+}
+
+
+/* Paragraphs */
+.paragraf {
+  padding: 0.4rem 0.7rem;
+  font-size: 1.3rem;
+}
+
+.paragraf-1 {
+  padding: 0.4rem 0.7rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+.paragraf-2 {
+  padding: 0.4rem 0.7rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+
+span {
+  color: #ff6600;
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+
+/* Tablets and larger (>=768px) */
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+  }
+
+  .slika1 {
+    background-image: url("pumpaj1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+}
+
+/* Small desktop / large tablets (>=992px) */
+@media (min-width: 992px) {
+  header nav {
+    display: flex;
+  }
+  .slika1::before{
+    background-position:center ;
+  }
+    .slika2::before{
+    background-position:center ;
+  }
+    .slika3::before{
+    background-position:center ;
+  }
+  
+}
+
+/* Large desktop (>=1200px) */
+@media (min-width: 1200px) {
+  header nav {
+    display: flex;
+  }
+
+  .naslov::after {
+    width: 1.8em;
+  }
+}
+
+/* Font fallback */
+.roboto-condensed-uniquifier {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
